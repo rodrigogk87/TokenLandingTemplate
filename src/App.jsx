@@ -4,8 +4,7 @@ import { Header } from './components/header'
 import { Roadmap } from './components/roadmap'
 import { About } from './components/about'
 import { Tokenomics } from './components/tokenomics'
-import { Gallery } from './components/gallery'
-import { Testimonials } from './components/testimonials'
+import { Footer } from './components/footer'
 import { Team } from './components/Team'
 import { Contact } from './components/contact'
 import JsonData from './data/data.json'
@@ -25,12 +24,13 @@ const App = () => {
   return (
     <div>
       <Navigation />
+      <Contact data={landingPageData.Contact} />
       <Header data={landingPageData.Header} />
       <About />
       <Tokenomics data={landingPageData.Tokenomics} />
       <Roadmap data={landingPageData.Roadmap} />
       <Team data={landingPageData.Team} />
-      <Contact data={landingPageData.Contact} />
+      <Footer></Footer>
     </div>
   )
 }
